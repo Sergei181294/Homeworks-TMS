@@ -14,6 +14,7 @@ namespace TextAnalyzer
             DigitToWordConverter converter = new DigitToWordConverter();
             TextAnalyzer textAnalyzer = new TextAnalyzer();
             SentencesWithoutCommas sentencesWithoutCommas = new SentencesWithoutCommas();
+            SameWordsByFirstLetter sameWords = new SameWordsByFirstLetter();
 
 
             while (true)
@@ -24,6 +25,7 @@ namespace TextAnalyzer
                 Console.WriteLine("3. Replace digits from 0 to 9 with words 'zero', 'one', ..., 'nine'.");
                 Console.WriteLine("4.Display the question sentences first, and then the exclamation sentences.");
                 Console.WriteLine("5.Display only the sentences that do not contain commas.");
+                Console.WriteLine("6.Find words that start and end with the same letter.");
 
                 int choice = int.Parse(Console.ReadLine());
 
@@ -52,6 +54,10 @@ namespace TextAnalyzer
                     case 5:
                         string formattedText = sentencesWithoutCommas.SortingSentences(input);
                         Console.WriteLine($"Sentences without commas: {formattedText}");
+                        break;
+                    case 6:
+                        string words = sameWords.SameWordsFinder(input);
+                        Console.WriteLine($"Words that start and end with the same letter: {words}");
                         break;
                 }
             }
