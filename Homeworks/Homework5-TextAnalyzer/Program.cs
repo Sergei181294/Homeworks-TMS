@@ -13,6 +13,7 @@ namespace TextAnalyzer
             LongestWordFinder wordFinder = new LongestWordFinder(input);
             DigitToWordConverter converter = new DigitToWordConverter();
             TextAnalyzer textAnalyzer = new TextAnalyzer();
+            SentencesWithoutCommas sentencesWithoutCommas = new SentencesWithoutCommas();
 
 
             while (true)
@@ -21,7 +22,8 @@ namespace TextAnalyzer
                 Console.WriteLine("1. Find words containing the maximum number of digits.");
                 Console.WriteLine("2. Find the longest word and determine how many times it occurred in the text.");
                 Console.WriteLine("3. Replace digits from 0 to 9 with words 'zero', 'one', ..., 'nine'.");
-                Console.WriteLine("4.Вывести на экран сначала вопросительные, а затем восклицательные предложения.");
+                Console.WriteLine("4.Display the question sentences first, and then the exclamation sentences.");
+                Console.WriteLine("5.Display only the sentences that do not contain commas.");
 
                 int choice = int.Parse(Console.ReadLine());
 
@@ -46,6 +48,10 @@ namespace TextAnalyzer
                         {
                             Console.WriteLine(sentence);
                         }
+                        break;
+                    case 5:
+                        string formattedText = sentencesWithoutCommas.SortingSentences(input);
+                        Console.WriteLine($"Sentences without commas: {formattedText}");
                         break;
                 }
             }
