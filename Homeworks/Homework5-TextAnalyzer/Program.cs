@@ -6,21 +6,22 @@ namespace TextAnalyzer
     {
         static void Main()
         {
-
-            Console.WriteLine("Введите строку..");
+            Console.WriteLine("Enter a text..");
             string input = Console.ReadLine();
 
             DigitSearcher digitSearcher = new DigitSearcher();
             LongestWordFinder wordFinder = new LongestWordFinder(input);
             DigitToWordConverter converter = new DigitToWordConverter();
+            TextAnalyzer textAnalyzer = new TextAnalyzer();
 
 
             while (true)
             {
-                Console.WriteLine("Меню выбора действий: ");
-                Console.WriteLine("1.Найти слова содержащие максимальное количество цифр.");
-                Console.WriteLine("2.Найти самое длинное слово и определить, сколько раз оно встретилось в тексте.");
-                Console.WriteLine("3.Заменить цифры от 0 до 9 на слова «ноль», «один», ..., «девять».");
+                Console.WriteLine("Menu of actions: ");
+                Console.WriteLine("1. Find words containing the maximum number of digits.");
+                Console.WriteLine("2. Find the longest word and determine how many times it occurred in the text.");
+                Console.WriteLine("3. Replace digits from 0 to 9 with words 'zero', 'one', ..., 'nine'.");
+                Console.WriteLine("4.Вывести на экран сначала вопросительные, а затем восклицательные предложения.");
 
                 int choice = int.Parse(Console.ReadLine());
 
@@ -28,16 +29,23 @@ namespace TextAnalyzer
                 {
                     case 1:
                         string wordWithMostDigits = digitSearcher.FindWordWithMostDigits(input);
-                        Console.WriteLine($"Слово с наибольшим количеством цифр: {wordWithMostDigits}");
+                        Console.WriteLine($"Word with the most digits: {wordWithMostDigits}");
                         break;
                     case 2:
                         string longestWord = wordFinder.FindLongestWord();
                         int count = wordFinder.CountWordOccurence(longestWord);
-                        Console.WriteLine($"Самое длинное слово: {longestWord} встречалось в тексте {count} раз.");
+                        Console.WriteLine($"The longest word: {longestWord} appeared in the text {count} times.");
                         break;
                     case 3:
                         string convertedString = converter.Converter(input);
-                        Console.WriteLine($"Новая строка выглядит так: {convertedString}");
+                        Console.WriteLine($"The new string looks like this: {convertedString}");
+                        break;
+                    case 4:
+                        List<string> sentences = textAnalyzer.SortedSentence(input);
+                        foreach (string sentence in sentences)
+                        {
+                            Console.WriteLine(sentence);
+                        }
                         break;
                 }
             }
