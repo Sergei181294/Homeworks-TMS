@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework3-Calculator", "Homework3-Calculator\Homework3-Calculator.csproj", "{3AEAA9CD-F745-473F-9044-403196A1F41C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework3-Calculator", "Homework3-Calculator\Homework3-Calculator.csproj", "{3AEAA9CD-F745-473F-9044-403196A1F41C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A5DC716E-A068-44A0-9579-3F5FB2FC99DA}"
 	ProjectSection(SolutionItems) = preProject
 		..\.gitignore = ..\.gitignore
 		..\README.md = ..\README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework4-MatrixProgram", "Homework4-MatrixProgram\Homework4-MatrixProgram.csproj", "{1FE218D8-CF85-49B6-B00D-D1D8F7BC41A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework5-TextAnalyzer", "Homework5-TextAnalyzer\Homework5-TextAnalyzer.csproj", "{4E9D577F-C58C-4E13-8BA8-A06971C9A0B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{3AEAA9CD-F745-473F-9044-403196A1F41C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AEAA9CD-F745-473F-9044-403196A1F41C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AEAA9CD-F745-473F-9044-403196A1F41C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE218D8-CF85-49B6-B00D-D1D8F7BC41A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE218D8-CF85-49B6-B00D-D1D8F7BC41A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE218D8-CF85-49B6-B00D-D1D8F7BC41A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE218D8-CF85-49B6-B00D-D1D8F7BC41A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E9D577F-C58C-4E13-8BA8-A06971C9A0B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E9D577F-C58C-4E13-8BA8-A06971C9A0B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E9D577F-C58C-4E13-8BA8-A06971C9A0B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E9D577F-C58C-4E13-8BA8-A06971C9A0B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
