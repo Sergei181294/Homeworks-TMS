@@ -11,11 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework7-8-AnimalInheritanceExample", "Homework7-8-AnimalInheritanceExample\Homework7-8-AnimalInheritanceExample.csproj", "{02211A57-C3B3-4E31-BFF5-31B82F473454}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework4-MatrixProgram", "Homework4-MatrixProgram\Homework4-MatrixProgram.csproj", "{1FE218D8-CF85-49B6-B00D-D1D8F7BC41A8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework5-TextAnalyzer", "Homework5-TextAnalyzer\Homework5-TextAnalyzer.csproj", "{4E9D577F-C58C-4E13-8BA8-A06971C9A0B8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework7-8-AnimalInheritanceExample", "Homework7-8-AnimalInheritanceExample\Homework7-8-AnimalInheritanceExample.csproj", "{02211A57-C3B3-4E31-BFF5-31B82F473454}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework7-8-AnimalInheritanceExample", "Homework7-8-AnimalInheritanceExample\Homework7-8-AnimalInheritanceExample.csproj", "{02211A57-C3B3-4E31-BFF5-31B82F473454}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
